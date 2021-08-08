@@ -1,0 +1,8 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        nums = [int(i) for i in str(abs(x))]
+        new = 0
+        for i in range(len(nums)):
+            new += nums[i] * 10 **i
+        
+        return new == x
