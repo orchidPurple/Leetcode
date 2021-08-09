@@ -1,0 +1,5 @@
+class Solution(object):
+    def maxProductDifference(self, nums):
+        
+        sortedNums = sorted(nums)
+        return sortedNums[-1] * sortedNums[-2] - sortedNums[0] * sortedNums[1]
