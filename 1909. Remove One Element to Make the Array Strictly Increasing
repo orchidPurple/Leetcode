@@ -1,0 +1,7 @@
+class Solution(object):
+    def canBeIncreasing(self, nums):
+        for i in range(0, len(nums)):
+            newNum = nums[:i] + nums[i+1:]
+            if newNum == sorted(newNum) and len(newNum)==len(set(newNum)):
+                return True
+        return False
