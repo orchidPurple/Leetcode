@@ -1,0 +1,5 @@
+##more info for pointers
+##https://leetcode.com/problems/squares-of-a-sorted-array/discuss/310865/Python%3A-A-comparison-of-lots-of-approaches!-Sorting-two-pointers-deque-iterator-generator
+class Solution(object):
+    def sortedSquares(self, nums):
+        return sorted([i**2 for i in nums])
