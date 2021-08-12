@@ -1,0 +1,9 @@
+class Solution(object):
+    def sortArrayByParityII(self, nums):
+        even = [i for i in nums if i%2==0]
+        odd = [i for i in nums if i%2!=0]
+
+        output = []
+        for i in range(len(even)):
+            output+=[even[i]]+[odd[i]]
+        return output
