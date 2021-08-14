@@ -1,0 +1,8 @@
+class Solution(object):
+    def majorityElement(self, nums):
+        if len(nums)<=2:
+            return nums[0]
+        else:
+            index = len(nums)//2
+            new = sorted(nums)
+            return new[index]
