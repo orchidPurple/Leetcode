@@ -1,0 +1,6 @@
+class Solution(object):
+    def moveZeroes(self, nums):
+        zero_cnt = len([i for i in nums if i==0])
+        list1 = [i for i in nums if i!=0]+[0]*zero_cnt
+        nums[:] = list1
+        return nums
