@@ -1,0 +1,11 @@
+class Solution(object):
+    def maxProfit(self, prices):
+        if len(prices) < 2:
+            return 0
+        min_p, max_p = prices[0],prices[1]
+        max_profit = 0
+        for price in prices:
+            min_p = min(min_p, price)
+            profit = price - min_p
+            max_profit = max(max_profit, profit)
+        return max_profit
